@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Runway</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+<div class="header-bar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+    <a class="navbar-brand" href="#">Runways</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="slide.html">favourites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  
+</nav>
+
+ 
+
+
+<div class="container mt-4" style="padding:80px; padding-right:10px">
+  <h1> My Faourites </h1>
+          <div class="card text-center pb-2 mb-4">
+            <div class="row" style="padding:10px">
+          
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb w3-content w3-section">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Honda city" data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" data-target="#image-gallery">
+                <img class="img-thumbnail w3-animate-zoom" src="https://imgd.aeplcdn.com/370x208/cw/ec/33372/Kia-Seltos-Exterior-167737.jpg?wm=0" alt="Another alt text">
+              </a>
+
+<p id="Benz" class="font-weight-bold"> </p>
+<script>
+
+		  					fetch("https://api.myjson.com/bins/11039u")
+							.then(function(resp){
+								return resp.json();
+								})
+								.then(function(data){
+								fav=sessionStorage.getItem("favourite");
+								console.log(fav);
+								
+								
+									if (fav=='Class_A'||fav=='CLS_Class'){
+								var obj=data.Cars.Mercedes_Benz[fav];
+									console.log(obj.Model);
+									document.getElementById("Benz").innerHTML = obj.Make+"<br>"+obj.Model
+									}
+									if(fav=='A5'||fav=='A6'){
+									var obj=data.Cars.Audi[fav];
+									document.getElementById("Benz").innerHTML = obj.Make+"<br>"+obj.Model
+									}
+									if (fav=='Golf'||fav=='Polo'){
+								var obj=data.Cars.VOLKSWAGEN[fav];
+									
+									console.log(obj.Model);
+									document.getElementById("Benz").innerHTML = obj.Make+"<br>"+obj.Model
+									}
+									if (fav=='Supra'||fav=='Corolla'){
+								var obj=data.Cars.TOYOTA[fav];
+									
+									console.log(obj.Model);
+									document.getElementById("Benz").innerHTML = obj.Title+"<br>"+obj.Model
+									}
+									if (fav=='Accent'||fav=='Elantra'){
+								var obj=data.Cars.HYUNDAI[fav];
+									
+									console.log(obj.Model);
+									document.getElementById("Benz").innerHTML = obj.Make+"<br>"+obj.Model
+									}
+									
+									});
+</script>
+              <p><a class="thumbnail btn btn-info" href="slide.html" data-image="https://image.shutterstock.com/image-photo/image-front-sports-car-scene-260nw-566330083.jpg" data-target="#image-gallery">View Model </a></p>
+              </div>
+
+</div>
+            </div>
+          </div>
+        </div>
+   
+      <footer class="mt-4 bg-dark">
+  <div class="container">
+    <div class="row text-center align-items-center">
+      <div class="col-12 col-sm-6 col-md-4 text-sm-left" style="color:white">
+    <h3>Runways</h3>
+        <p>70 Bowman St.<br>South Circular Rd, Dublin 8</p>
+        <p>Ireland</p>
+        <p>+353 896523147</p>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-0 text-center text-sm-right text-md-center" style="height:80px;">
+    
+      </div>
+
+      <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
+        
+             
+        <a href="https://www.facebook.com" class="mx-2"><img src="https://img.icons8.com/ios-filled/32/ffffff/facebook-new.png"></a>
+       <a href="https://www.linkedin.com" class="mx-2"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-2.png"></a>
+        <a href="https://www.instagram.com" class="mx-2"><img src="https://img.icons8.com/metro/26/ffffff/instagram-new.png">
+      
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+      </body>
+      </html>
+
