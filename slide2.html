@@ -11,11 +11,16 @@
 </head>
 <style>
 	.simple-gallery {
-		width: 408px;
-		display: block;
 		margin: auto;
 		margin-top: 50px;
 		box-shadow: 5px 20px 60px 10px Gray;
+	}
+	.simple-gallery img {
+		object-fit: contain;
+	}
+
+	.font-13 {
+		font-size: 13px !important;
 	}
 
 	img {
@@ -46,218 +51,230 @@
 	}
 </style>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<div class="container">
-			<a class="navbar-brand" href="#">Runways</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="favourite.html">Favourites</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="#">Runways</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="favourite.html">Favourites</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="row" style="margin-top:85px">
+		<div class="col-12 col-md-6">
+			<div class="row simple-gallery w-100">
+				<div class="col-12 w-100 px-0">
+					<img class="maxi w-100 px-0" src="https://i.pinimg.com/originals/04/bc/d4/04bcd4d65e45a347d4d5881ee120f6f5.jpg" />
+				</div>
+				<div class="col-12 mini">
+					<div class="row">
+						<div class="col-3 px-0">
+							<img class="w-100" src="https://i.pinimg.com/originals/04/bc/d4/04bcd4d65e45a347d4d5881ee120f6f5.jpg">
+						</div>
+						<div class="col-3 px-0">
+							<img class="w-100" src="https://cdn.pixabay.com/photo/2015/08/11/12/05/audi-a5-884243_960_720.jpg">
+						</div>
+						<div class="col-3 px-0">
+							<img class="w-100" src="https://1.bp.blogspot.com/-Lpkg9y-4z1c/VssDWwO0qxI/AAAAAAAAADU/unPGuCEUD9s/s1600/.jpg">
+						</div>
+						<div class="col-3 px-0">
+							<img class="w-100" src="https://icdn6.digitaltrends.com/image/2019-bmw-x5-22-1600x1067.jpg">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</nav>
-	<div class="container">
-		<div class="row" style="margin-top:85px">
-			<div class="col-12 col-sm-6 mt-4" >
-				<div class="simple-gallery mt-2">
-					<img class="maxi" src="https://i.pinimg.com/originals/04/bc/d4/04bcd4d65e45a347d4d5881ee120f6f5.jpg">
-					<div class="mini">  
-						<img src="https://i.pinimg.com/originals/04/bc/d4/04bcd4d65e45a347d4d5881ee120f6f5.jpg">
-						<img src="https://cdn.pixabay.com/photo/2015/08/11/12/05/audi-a5-884243_960_720.jpg">
-						<img src="https://1.bp.blogspot.com/-Lpkg9y-4z1c/VssDWwO0qxI/AAAAAAAAADU/unPGuCEUD9s/s1600/.jpg">
-						<img src="https://icdn6.digitaltrends.com/image/2019-bmw-x5-22-1600x1067.jpg">
-					</div>
-
+		<div class="col-12 col-md-6" style="margin-top:50px;">
+			<h1 id="title"> Mercedes C</h1>
+			<h3 id="title-price">2483 </h3>
+			<div class="car-info margin-bottom-50">
+				<div class="table-responsive">
+					<table class="table table-details mt-4">
+						<tbody>
+						<tr>
+							<th>Make:</th>
+							<td id="make">Mercedes-Benz</td>
+						</tr>
+						<tr>
+							<th>Model:</th>
+							<td id="model">S 600</td>
+						</tr>
+						<tr>
+							<th>Year:</th>
+							<td id="year">2007</td>
+						</tr>
+						<tr>
+							<th>Price:</th>
+							<td id="price">>€29,950</td>
+						</tr>
+						<tr>
+							<th>Mileage:</th>
+							<td id="mileage">90,722 miles <br>145,999 km</td>
+						</tr>
+						<tr>
+							<th>Fuel type:</th>
+							<td id="fuel_type">Petrol</td>
+						</tr>
+						<tr>
+							<th>Engine size:</th>
+							<td id="engine_size">5.5</td>
+						</tr>
+						<tr>
+							<th>Colour</th>
+							<td id="color">CORNELIAN RED</td>
+						</tr>
+						<tr>
+							<th>Body:</th>
+							<td id="body">Saloon</td>
+						</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
-			<div class="col-sm-6" style="margin-top:50px">
-				<h1 id="title"> Mercedes C</h1>
-				<h3 id="title-price">2483 </h3>
-				<div class="car-info margin-bottom-50">
-					<div class="table-responsive">
-						<table class="table table-details mt-4">
-							<tbody>
-								<tr>
-									<th>Make:</th>
-									<td id="make">Mercedes-Benz</td>
-								</tr>
-								<tr>
-									<th>Model:</th>
-									<td id="model">S 600</td>
-								</tr>
-								<tr>
-									<th>Year:</th>
-									<td id="year">2007</td>
-								</tr>
-								<tr>
-									<th>Price:</th>
-									<td id="price">>€29,950</td>
-								</tr>
-								<tr>
-									<th>Mileage:</th>
-									<td id="mileage">90,722 miles <br>145,999 km</td>
-								</tr>
-								<tr>
-									<th>Fuel type:</th>
-									<td id="fuel_type">Petrol</td>
-								</tr>
-								<tr>
-									<th>Engine size:</th>
-									<td id="engine_size">5.5</td>
-								</tr>
-								<tr>
-									<th>Colour</th>
-									<td id="color">CORNELIAN RED</td>
-								</tr>
-								<tr>
-									<th>Body:</th>
-									<td id="body">Saloon</td>
-								</tr>
+			<script>
+				fetch("https://api.myjson.com/bins/11039u")
+						.then(function(resp){
+							return resp.json();
+						})
+						.then(function(data){
+							var a=sessionStorage.getItem("carname");
+
+							console.log(a);
+							if (a=='Class_A'||a=='CLS_Class'){
+								var obj=data.Cars.Mercedes_Benz[a];
+								console.log(obj.Model);
+								document.getElementById("title").innerHTML = obj.Title+"<br>"+obj.Model
+								document.getElementById("title-price").innerHTML = obj.Price
+								document.getElementById("make").innerHTML = obj.Make
+								document.getElementById("model").innerHTML = obj.Model
+								document.getElementById("year").innerHTML = obj.Year
+								document.getElementById("price").innerHTML = obj.Price
+								document.getElementById("mileage").innerHTML = obj.Mileage
+								document.getElementById("fuel_type").innerHTML = obj.Fuel_type
+								document.getElementById("engine_size").innerHTML = obj.Engine_size
+								document.getElementById("color").innerHTML = obj.Colour
+								document.getElementById("body").innerHTML = obj.Body
+								document.getElementById("owners").innerHTML = obj.Owners
+							}
+							if(a=='A5'||a=='A6'){
+								var obj=data.Cars.Audi[a];
+								document.getElementById("title").innerHTML = obj.Title+"<br>"+obj.Model
+								document.getElementById("title-price").innerHTML = obj.Price
+								document.getElementById("make").innerHTML = obj.Make
+								document.getElementById("model").innerHTML = obj.Model
+								document.getElementById("year").innerHTML = obj.Year
+								document.getElementById("price").innerHTML = obj.Price
+								document.getElementById("mileage").innerHTML = obj.Mileage
+								document.getElementById("fuel_type").innerHTML = obj.Fuel_type
+								document.getElementById("engine_size").innerHTML = obj.Engine_size
+								document.getElementById("color").innerHTML = obj.Colour
+								document.getElementById("body").innerHTML = obj.Body
+								document.getElementById("owners").innerHTML = obj.Owners
+							}
+							if (a=='Golf'||a=='Polo'){
+								var obj=data.Cars.VOLKSWAGEN[a];
+
+								console.log(obj.Model);
+								document.getElementById("title").innerHTML = obj.Title+"<br>"+obj.Model
+								document.getElementById("title-price").innerHTML = obj.Price
+								document.getElementById("make").innerHTML = obj.Make
+								document.getElementById("model").innerHTML = obj.Model
+								document.getElementById("year").innerHTML = obj.Year
+								document.getElementById("price").innerHTML = obj.Price
+								document.getElementById("mileage").innerHTML = obj.Mileage
+								document.getElementById("fuel_type").innerHTML = obj.Fuel_type
+								document.getElementById("engine_size").innerHTML = obj.Engine_size
+								document.getElementById("color").innerHTML = obj.Colour
+								document.getElementById("body").innerHTML = obj.Body
+								document.getElementById("owners").innerHTML = obj.Owners
+							}
+							if (a=='Supra'||a=='Corolla'){
+								var obj=data.Cars.TOYOTA[a];
+
+								console.log(obj.Model);
+								document.getElementById("title").innerHTML = obj.Title+"<br>"+obj.Model
+								document.getElementById("title-price").innerHTML = obj.Price
+								document.getElementById("make").innerHTML = obj.Make
+								document.getElementById("model").innerHTML = obj.Model
+								document.getElementById("year").innerHTML = obj.Year
+								document.getElementById("price").innerHTML = obj.Price
+								document.getElementById("mileage").innerHTML = obj.Mileage
+								document.getElementById("fuel_type").innerHTML = obj.Fuel_type
+								document.getElementById("engine_size").innerHTML = obj.Engine_size
+								document.getElementById("color").innerHTML = obj.Colour
+								document.getElementById("body").innerHTML = obj.Body
+								document.getElementById("owners").innerHTML = obj.Owners
+							}
+							if (a=='Accent'||a=='Elantra'){
+								var obj=data.Cars.HYUNDAI[a];
+
+								console.log(obj.Model);
+								document.getElementById("title").innerHTML = obj.Title+"<br>"+obj.Model
+								document.getElementById("title-price").innerHTML = obj.Price
+								document.getElementById("make").innerHTML = obj.Make
+								document.getElementById("model").innerHTML = obj.Model
+								document.getElementById("year").innerHTML = obj.Year
+								document.getElementById("price").innerHTML = obj.Price
+								document.getElementById("mileage").innerHTML = obj.Mileage
+								document.getElementById("fuel_type").innerHTML = obj.Fuel_type
+								document.getElementById("engine_size").innerHTML = obj.Engine_size
+								document.getElementById("color").innerHTML = obj.Colour
+								document.getElementById("body").innerHTML = obj.Body
+								document.getElementById("owners").innerHTML = obj.Owners
+							}
+
+						});
 
 
+			</script>
 
-							</tbody>
-						</table>
-					</div>
+			<div class="row">
+				<div class="col-12 mb-2 mb-md-0">
+					<button type="button" onclick="window.location.href = 'contact.html';" class="btn btn-info btn-lg">Contact Dealer</button>
 				</div>
+				<div class="col-12 col-md-6 my-md-3 mb-2">
+					<button type="button" class="w-100 btn btn-secondary font-13" onclick="favfunc('model')">Add to favourites</button>
+				</div>
+				<div class="col-12 col-md-6 my-md-3 pl-md-0 mb-2">
+					<button type="button" class="w-100 btn btn-secondary font-13">Remove from favourites</button>
+				</div>
+
 				<script>
-					fetch("https://api.myjson.com/bins/11039u")
-					.then(function(resp){
-						return resp.json();
-					})
-					.then(function(data){
-						var a=sessionStorage.getItem("carname");
-
-						console.log(a);
-						if (a=='Class_A'||a=='CLS_Class'){
-							var obj=data.Cars.Mercedes_Benz[a];
-							console.log(obj.Model);
-							document.getElementById("title").innerHTML = obj.Title+"<br>"+obj.Model
-							document.getElementById("title-price").innerHTML = obj.Price
-							document.getElementById("make").innerHTML = obj.Make
-							document.getElementById("model").innerHTML = obj.Model
-							document.getElementById("year").innerHTML = obj.Year
-							document.getElementById("price").innerHTML = obj.Price
-							document.getElementById("mileage").innerHTML = obj.Mileage
-							document.getElementById("fuel_type").innerHTML = obj.Fuel_type
-							document.getElementById("engine_size").innerHTML = obj.Engine_size
-							document.getElementById("color").innerHTML = obj.Colour
-							document.getElementById("body").innerHTML = obj.Body
-							document.getElementById("owners").innerHTML = obj.Owners
-						}
-						if(a=='A5'||a=='A6'){
-							var obj=data.Cars.Audi[a];
-							document.getElementById("title").innerHTML = obj.Title+"<br>"+obj.Model
-							document.getElementById("title-price").innerHTML = obj.Price
-							document.getElementById("make").innerHTML = obj.Make
-							document.getElementById("model").innerHTML = obj.Model
-							document.getElementById("year").innerHTML = obj.Year
-							document.getElementById("price").innerHTML = obj.Price
-							document.getElementById("mileage").innerHTML = obj.Mileage
-							document.getElementById("fuel_type").innerHTML = obj.Fuel_type
-							document.getElementById("engine_size").innerHTML = obj.Engine_size
-							document.getElementById("color").innerHTML = obj.Colour
-							document.getElementById("body").innerHTML = obj.Body
-							document.getElementById("owners").innerHTML = obj.Owners
-						}
-						if (a=='Golf'||a=='Polo'){
-							var obj=data.Cars.VOLKSWAGEN[a];
-
-							console.log(obj.Model);
-							document.getElementById("title").innerHTML = obj.Title+"<br>"+obj.Model
-							document.getElementById("title-price").innerHTML = obj.Price
-							document.getElementById("make").innerHTML = obj.Make
-							document.getElementById("model").innerHTML = obj.Model
-							document.getElementById("year").innerHTML = obj.Year
-							document.getElementById("price").innerHTML = obj.Price
-							document.getElementById("mileage").innerHTML = obj.Mileage
-							document.getElementById("fuel_type").innerHTML = obj.Fuel_type
-							document.getElementById("engine_size").innerHTML = obj.Engine_size
-							document.getElementById("color").innerHTML = obj.Colour
-							document.getElementById("body").innerHTML = obj.Body
-							document.getElementById("owners").innerHTML = obj.Owners
-						}
-						if (a=='Supra'||a=='Corolla'){
-							var obj=data.Cars.TOYOTA[a];
-
-							console.log(obj.Model);
-							document.getElementById("title").innerHTML = obj.Title+"<br>"+obj.Model
-							document.getElementById("title-price").innerHTML = obj.Price
-							document.getElementById("make").innerHTML = obj.Make
-							document.getElementById("model").innerHTML = obj.Model
-							document.getElementById("year").innerHTML = obj.Year
-							document.getElementById("price").innerHTML = obj.Price
-							document.getElementById("mileage").innerHTML = obj.Mileage
-							document.getElementById("fuel_type").innerHTML = obj.Fuel_type
-							document.getElementById("engine_size").innerHTML = obj.Engine_size
-							document.getElementById("color").innerHTML = obj.Colour
-							document.getElementById("body").innerHTML = obj.Body
-							document.getElementById("owners").innerHTML = obj.Owners
-						}
-						if (a=='Accent'||a=='Elantra'){
-							var obj=data.Cars.HYUNDAI[a];
-
-							console.log(obj.Model);
-							document.getElementById("title").innerHTML = obj.Title+"<br>"+obj.Model
-							document.getElementById("title-price").innerHTML = obj.Price
-							document.getElementById("make").innerHTML = obj.Make
-							document.getElementById("model").innerHTML = obj.Model
-							document.getElementById("year").innerHTML = obj.Year
-							document.getElementById("price").innerHTML = obj.Price
-							document.getElementById("mileage").innerHTML = obj.Mileage
-							document.getElementById("fuel_type").innerHTML = obj.Fuel_type
-							document.getElementById("engine_size").innerHTML = obj.Engine_size
-							document.getElementById("color").innerHTML = obj.Colour
-							document.getElementById("body").innerHTML = obj.Body
-							document.getElementById("owners").innerHTML = obj.Owners
-						}
-
-					});
-
-
+					function favfunc(fav1){
+						sessionStorage.setItem("favourite",document.getElementById(fav1).innerHTML);
+					}
 				</script>
-
-				<button type="button" onclick="window.location.href = 'contact.html';" class="btn btn-info btn-lg mx-3">Contact Dealer</button>
-				<div class="container" style="margin-left:80px">
-					<button type="button" class="btn btn-secondary mt-3 mx-3" onclick="favfunc('model')">Add to favourites</button>
-					<script>
-						function favfunc(fav1){
-							sessionStorage.setItem("favourite",document.getElementById(fav1).innerHTML);
-						}
-					</script>
-					<button type="button" class="btn btn-secondary mt-3">Remove from favourites</button>
-				</div>
 			</div>
-			<div class="col-12 mt-4">
-				<div class="">
-					<hr>
-					<div class="tabs-content" data-tabs-content="example-tabs">
-						<div class="tabs-panel is-active" id="panel1">
-							<h4>Description</h4>
-							<p>BEAUTIFUL CAR FINISHED METALLIC WITH COMPLIMENTING BLACK PEARL/CARBON CHECK INTERIOR. FULL EXTERIOR DE-CHROME. 17" MINI COSMOS WHEELS FINISHED IN BLACK. SPORTS SEATS. MULTI FUNCTION SPORTS STEERING WHEEL. PIANO BLACK INTERIOR TRIM. MINI EXCITEMENT PACK. MINI DRIVING MODES. FOGLIGHTS. CLIMATE CONTROL. CRUISE CONTROL. LIGHTS PACK. AMBIENT LIGHTING. DAB RADIO. ALL CARS COME FULLY SERVICED WARRANTED AND CARTELL CHECKED. TRADES INS WELCOMED. A HOST OF FINANCE OPTIONS TO SUIT YOUR NEEDS.</p>
-						</div>
+		</div>
+		<div class="col-12 mt-4">
+			<div class="">
+				<hr>
+				<div class="tabs-content" data-tabs-content="example-tabs">
+					<div class="tabs-panel is-active" id="panel1">
+						<h4>Description</h4>
+						<p>BEAUTIFUL CAR FINISHED METALLIC WITH COMPLIMENTING BLACK PEARL/CARBON CHECK INTERIOR. FULL EXTERIOR DE-CHROME. 17" MINI COSMOS WHEELS FINISHED IN BLACK. SPORTS SEATS. MULTI FUNCTION SPORTS STEERING WHEEL. PIANO BLACK INTERIOR TRIM. MINI EXCITEMENT PACK. MINI DRIVING MODES. FOGLIGHTS. CLIMATE CONTROL. CRUISE CONTROL. LIGHTS PACK. AMBIENT LIGHTING. DAB RADIO. ALL CARS COME FULLY SERVICED WARRANTED AND CARTELL CHECKED. TRADES INS WELCOMED. A HOST OF FINANCE OPTIONS TO SUIT YOUR NEEDS.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-</div>
-</div>
-</div>     
+
 <footer class="mt-4 bg-dark">
 	<div class="container">
 		<div class="row text-center align-items-center">
@@ -272,19 +289,18 @@
 			<div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
 				<a href="https://www.facebook.com" class="mx-2"><img src="https://img.icons8.com/ios-filled/32/ffffff/facebook-new.png"></a>
 				<a href="https://www.linkedin.com" class="mx-2"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-2.png"></a>
-				<a href="https://www.instagram.com" class="mx-2"><img src="https://img.icons8.com/metro/26/ffffff/instagram-new.png">
-				</div>
+				<a href="https://www.instagram.com" class="mx-2"><img src="https://img.icons8.com/metro/26/ffffff/instagram-new.png"></a>
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
 </body>
-<script> 
 
-	$(".mini img").click(function(){  
-
-		$(".maxi").attr("src",$(this).attr("src").replace("100x100","400x400"));
-
-	});
+<script>
+	$(function() {
+		$(".mini img").click(function(){
+			$(".maxi").attr("src",$(this).attr("src").replace("100x100","400x400"));
+		});
+	})
 </script>
-</body>
 </html>
